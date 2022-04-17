@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "import"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "prettier",
+    "plugin:prettier/recommended",  
+    "plugin:import/recommended",
+    "plugin:import/typescript"
+  ],
+  "rules": {
+    "semi": ["error", "always"],
+    "@typescript-eslint/no-empty-function": ["error", {"allow": ["private-constructors", "protected-constructors"]}],
+    "eol-last": ["error", "always"],
+    "no-unused-vars": "off",
+    "@typescript-eslint/explicit-function-return-type": ["error"],
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "prettier/prettier": ["error", {
+      "singleQuote": false,
+      "trailingComma": "all",
+      "printWidth": 120,
+      "arrowParens": "always"
+    }],
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "import/order": ["error", { "newlines-between": "always", "groups": ["builtin", "external", "internal", "parent", "sibling", "index"] }],
+    "import/no-unresolved": ["off"],
+    "import/no-named-as-default-member": ["off"],
+    "import/no-named-as-default": ["off"],
+    "no-restricted-imports": ["error", {
+      "patterns": [".*"]
+    }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts"]
+      }
+    }
+  }
+}

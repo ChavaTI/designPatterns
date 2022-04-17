@@ -1,0 +1,31 @@
+{
+  "name": "designpatterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "clean": "rm -rf build",
+    "build": "npm run clean && tsc",
+    "lint": "eslint . --ext .js, .ts",
+    "watch": "npm run clean && ts-watch",
+    "test": " jest --jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "personal-github:ChavaTI/designPatterns.git"
+  },
+  "author": "ChavaTI",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
+    "ts-watch": "^1.0.8"
+  }
+}
