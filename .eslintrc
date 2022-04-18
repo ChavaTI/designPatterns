@@ -23,8 +23,7 @@
     "@typescript-eslint/explicit-function-return-type": ["error"],
     "@typescript-eslint/no-unused-vars": ["error"],
     "prettier/prettier": ["error", {
-      "singleQuote": false,
-      "trailingComma": "all",
+      "singleQuote": true,
       "printWidth": 120,
       "arrowParens": "always"
     }],
@@ -33,10 +32,7 @@
     "import/order": ["error", { "newlines-between": "always", "groups": ["builtin", "external", "internal", "parent", "sibling", "index"] }],
     "import/no-unresolved": ["off"],
     "import/no-named-as-default-member": ["off"],
-    "import/no-named-as-default": ["off"],
-    "no-restricted-imports": ["error", {
-      "patterns": [".*"]
-    }]
+    "import/no-named-as-default": ["off"]
   },
   "settings": {
     "import/resolver": {

@@ -2,12 +2,12 @@
   "name": "designpatterns",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "src/main.ts",
   "scripts": {
     "clean": "rm -rf build",
     "build": "npm run clean && tsc",
-    "lint": "eslint . --ext .js, .ts",
-    "watch": "npm run clean && ts-watch",
+    "lint": "eslint . --ext .js,.ts",
+    "watch": "npm run clean && tsc --watch",
     "test": " jest --jest.config.js"
   },
   "repository": {
@@ -20,8 +20,11 @@
     "typescript": "^4.6.3"
   },
   "devDependencies": {
+    "@types/node": "^17.0.24",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.5.1",
     "prettier": "^2.6.2",
